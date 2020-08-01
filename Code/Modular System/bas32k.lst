@@ -219,18 +219,30 @@
 0219   0247 CD 7F 06    BRKRET: CALL    CLREG           ; Clear registers and stack
 0220   024A C3 98 05            JP      PRNTOK          ; Go to get command line
 0221   024D             
-0222   024D 204279746573BFREE:  .BYTE   " Bytes free",CR,LF,0,0
-0222   0253 20667265650D0A0000
+0222   024D 20 42 79 74 BFREE:  .BYTE   " Bytes free",CR,LF,0,0
+0222   0251 65 73 20 66 
+0222   0255 72 65 65 0D 
+0222   0259 0A 00 00 
 0223   025C             
-0224   025C 5A3830204241SIGNON: .BYTE   "Z80 BASIC Ver 4.7b",CR,LF
-0224   0262 5349432056657220342E37620D0A
-0225   0270 436F70797269        .BYTE   "Copyright ",40,"C",41
-0225   0276 67687420284329
-0226   027D 203139373820        .BYTE   " 1978 by Microsoft",CR,LF,0,0
-0226   0283 6279204D6963726F736F66740D0A0000
+0224   025C 5A 38 30 20 SIGNON: .BYTE   "Z80 BASIC Ver 4.7b",CR,LF
+0224   0260 42 41 53 49 
+0224   0264 43 20 56 65 
+0224   0268 72 20 34 2E 
+0224   026C 37 62 0D 0A 
+0225   0270 43 6F 70 79         .BYTE   "Copyright ",40,"C",41
+0225   0274 72 69 67 68 
+0225   0278 74 20 28 43 
+0225   027C 29 
+0226   027D 20 31 39 37         .BYTE   " 1978 by Microsoft",CR,LF,0,0
+0226   0281 38 20 62 79 
+0226   0285 20 4D 69 63 
+0226   0289 72 6F 73 6F 
+0226   028D 66 74 0D 0A 
+0226   0291 00 00 
 0227   0293             
-0228   0293 4D656D6F7279MEMMSG: .BYTE   "Memory top",0
-0228   0299 20746F7000
+0228   0293 4D 65 6D 6F MEMMSG: .BYTE   "Memory top",0
+0228   0297 72 79 20 74 
+0228   029B 6F 70 00 
 0229   029E             
 0230   029E             ; FUNCTION ADDRESS TABLE
 0231   029E             
@@ -269,17 +281,20 @@
 0264   02D9 C6 4F 52            .BYTE   'F'+80H,"OR"
 0265   02DC CE 45 58 54         .BYTE   'N'+80H,"EXT"
 0266   02E0 C4 41 54 41         .BYTE   'D'+80H,"ATA"
-0267   02E4 C94E505554          .BYTE   'I'+80H,"NPUT"
+0267   02E4 C9 4E 50 55         .BYTE   'I'+80H,"NPUT"
+0267   02E8 54 
 0268   02E9 C4 49 4D            .BYTE   'D'+80H,"IM"
 0269   02EC D2 45 41 44         .BYTE   'R'+80H,"EAD"
 0270   02F0 CC 45 54            .BYTE   'L'+80H,"ET"
 0271   02F3 C7 4F 54 4F         .BYTE   'G'+80H,"OTO"
 0272   02F7 D2 55 4E            .BYTE   'R'+80H,"UN"
 0273   02FA C9 46               .BYTE   'I'+80H,"F"
-0274   02FC D24553544F52        .BYTE   'R'+80H,"ESTORE"
-0274   0302 45
-0275   0303 C74F535542          .BYTE   'G'+80H,"OSUB"
-0276   0308 D2455455524E        .BYTE   'R'+80H,"ETURN"
+0274   02FC D2 45 53 54         .BYTE   'R'+80H,"ESTORE"
+0274   0300 4F 52 45 
+0275   0303 C7 4F 53 55         .BYTE   'G'+80H,"OSUB"
+0275   0307 42 
+0276   0308 D2 45 54 55         .BYTE   'R'+80H,"ETURN"
+0276   030C 52 4E 
 0277   030E D2 45 4D            .BYTE   'R'+80H,"EM"
 0278   0311 D3 54 4F 50         .BYTE   'S'+80H,"TOP"
 0279   0315 CF 55 54            .BYTE   'O'+80H,"UT"
@@ -289,20 +304,28 @@
 0283   0322 C4 45 46            .BYTE   'D'+80H,"EF"
 0284   0325 D0 4F 4B 45         .BYTE   'P'+80H,"OKE"
 0285   0329 C4 4F 4B 45         .BYTE   'D'+80H,"OKE"
-0286   032D D3435245454E        .BYTE   'S'+80H,"CREEN"
-0287   0333 CC494E4553          .BYTE   'L'+80H,"INES"
+0286   032D D3 43 52 45         .BYTE   'S'+80H,"CREEN"
+0286   0331 45 4E 
+0287   0333 CC 49 4E 45         .BYTE   'L'+80H,"INES"
+0287   0337 53 
 0288   0338 C3 4C 53            .BYTE   'C'+80H,"LS"
-0289   033B D749445448          .BYTE   'W'+80H,"IDTH"
-0290   0340 CD4F4E49544F        .BYTE   'M'+80H,"ONITOR"
-0290   0346 52
+0289   033B D7 49 44 54         .BYTE   'W'+80H,"IDTH"
+0289   033F 48 
+0290   0340 CD 4F 4E 49         .BYTE   'M'+80H,"ONITOR"
+0290   0344 54 4F 52 
 0291   0347 D3 45 54            .BYTE   'S'+80H,"ET"
-0292   034A D245534554          .BYTE   'R'+80H,"ESET"
-0293   034F D052494E54          .BYTE   'P'+80H,"RINT"
+0292   034A D2 45 53 45         .BYTE   'R'+80H,"ESET"
+0292   034E 54 
+0293   034F D0 52 49 4E         .BYTE   'P'+80H,"RINT"
+0293   0353 54 
 0294   0354 C3 4F 4E 54         .BYTE   'C'+80H,"ONT"
 0295   0358 CC 49 53 54         .BYTE   'L'+80H,"IST"
-0296   035C C34C454152          .BYTE   'C'+80H,"LEAR"
-0297   0361 C34C4F4144          .BYTE   'C'+80H,"LOAD"
-0298   0366 C353415645          .BYTE   'C'+80H,"SAVE"
+0296   035C C3 4C 45 41         .BYTE   'C'+80H,"LEAR"
+0296   0360 52 
+0297   0361 C3 4C 4F 41         .BYTE   'C'+80H,"LOAD"
+0297   0365 44 
+0298   0366 C3 53 41 56         .BYTE   'C'+80H,"SAVE"
+0298   036A 45 
 0299   036B CE 45 57            .BYTE   'N'+80H,"EW"
 0300   036E             
 0301   036E D4 41 42 28         .BYTE   'T'+80H,"AB("
@@ -341,7 +364,8 @@
 0334   03BC C1 54 4E            .BYTE   'A'+80H,"TN"
 0335   03BF D0 45 45 4B         .BYTE   'P'+80H,"EEK"
 0336   03C3 C4 45 45 4B         .BYTE   'D'+80H,"EEK"
-0337   03C7 D04F494E54          .BYTE   'P'+80H,"OINT"
+0337   03C7 D0 4F 49 4E         .BYTE   'P'+80H,"OINT"
+0337   03CB 54 
 0338   03CC CC 45 4E            .BYTE   'L'+80H,"EN"
 0339   03CF D3 54 52 24         .BYTE   'S'+80H,"TR$"
 0340   03D3 D6 41 4C            .BYTE   'V'+80H,"AL"
@@ -349,8 +373,10 @@
 0342   03D9 C3 48 52 24         .BYTE   'C'+80H,"HR$"
 0343   03DD C8 45 58 24         .BYTE   'H'+80H,"EX$"
 0344   03E1 C2 49 4E 24         .BYTE   'B'+80H,"IN$"
-0345   03E5 CC45465424          .BYTE   'L'+80H,"EFT$"
-0346   03EA D24947485424        .BYTE   'R'+80H,"IGHT$"
+0345   03E5 CC 45 46 54         .BYTE   'L'+80H,"EFT$"
+0345   03E9 24 
+0346   03EA D2 49 47 48         .BYTE   'R'+80H,"IGHT$"
+0346   03EE 54 24 
 0347   03F0 CD 49 44 24         .BYTE   'M'+80H,"ID$"
 0348   03F4 80                  .BYTE   80H             ; End of list marker
 0349   03F5             
@@ -521,12 +547,15 @@
 0514   04DE             
 0515   04DE             ; END OF INITIALISATION TABLE ---------------------------------------------------
 0516   04DE             
-0517   04DE 204572726F72ERRMSG: .BYTE   " Error",0
-0517   04E4 00
-0518   04E5 20696E2000  INMSG:  .BYTE   " in ",0
+0517   04DE 20 45 72 72 ERRMSG: .BYTE   " Error",0
+0517   04E2 6F 72 00 
+0518   04E5 20 69 6E 20 INMSG:  .BYTE   " in ",0
+0518   04E9 00 
 0519   04EA             ZERBYT  .EQU    $-1             ; A zero byte
-0520   04EA 4F6B0D0A0000OKMSG:  .BYTE   "Ok",CR,LF,0,0
-0521   04F0 427265616B00BRKMSG: .BYTE   "Break",0
+0520   04EA 4F 6B 0D 0A OKMSG:  .BYTE   "Ok",CR,LF,0,0
+0520   04EE 00 00 
+0521   04F0 42 72 65 61 BRKMSG: .BYTE   "Break",0
+0521   04F4 6B 00 
 0522   04F6             
 0523   04F6 21 04 00    BAKSTK: LD      HL,4            ; Look for "FOR" block with
 0524   04F9 39                  ADD     HL,SP           ; same index as specified
@@ -1660,8 +1689,11 @@
 1652   0CA4 CD A5 09            CALL    GETCHR          ; Get next character
 1653   0CA7 C3 F2 0B            JP      PRNTLP          ; More to print
 1654   0CAA             
-1655   0CAA 3F5265646F20REDO:   .BYTE   "?Redo from start",CR,LF,0
-1655   0CB0 66726F6D2073746172740D0A00
+1655   0CAA 3F 52 65 64 REDO:   .BYTE   "?Redo from start",CR,LF,0
+1655   0CAE 6F 20 66 72 
+1655   0CB2 6F 6D 20 73 
+1655   0CB6 74 61 72 74 
+1655   0CBA 0D 0A 00 
 1656   0CBD             
 1657   0CBD 3A 12 81    BADINP: LD      A,(READFG)      ; READ or INPUT?
 1658   0CC0 B7                  OR      A
@@ -1776,8 +1808,11 @@
 1767   0D90 E1                  POP     HL              ; Restore code string address
 1768   0D91 C9                  RET
 1769   0D92             
-1770   0D92 3F4578747261EXTIG:  .BYTE   "?Extra ignored",CR,LF,0
-1770   0D98 2069676E6F7265640D0A00
+1770   0D92 3F 45 78 74 EXTIG:  .BYTE   "?Extra ignored",CR,LF,0
+1770   0D96 72 61 20 69 
+1770   0D9A 67 6E 6F 72 
+1770   0D9E 65 64 0D 0A 
+1770   0DA2 00 
 1771   0DA3             
 1772   0DA3 CD 3C 0B    FDTLP:  CALL    DATA            ; Get next statement
 1773   0DA6 B7                  OR      A               ; End of line?
