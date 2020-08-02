@@ -31,8 +31,8 @@ SER_BUFSIZE     .EQU     3FH
 SER_FULLSIZE    .EQU     30H
 SER_EMPTYSIZE   .EQU     5
 
-SIO_D           .EQU     $00             ; Address of SIO command register
-SIO_C           .EQU     $01             ; Address of SIO data register
+SIO_D           .EQU     $01             ; Address of SIO command register
+SIO_C           .EQU     $09             ; Address of SIO data register
 
 serBuf          .EQU     $8000
 serInPtr        .EQU     serBuf+SER_BUFSIZE
@@ -236,7 +236,7 @@ CORW:
                RST       08H
 COLDSTART:     LD        A,'Y'           ; Set the BASIC STARTED flag
                LD        (basicStarted),A
-               JP        $01D0           ; Start BASIC COLD
+               JP        $01A0           ; Start BASIC COLD
 CHECKWARM:
                CP        'W'
                JR        NZ, CORW
@@ -245,7 +245,7 @@ CHECKWARM:
                RST       08H
                LD        A,$0A
                RST       08H
-               JP        $01D3           ; Start BASIC WARM
+               JP        $01A3           ; Start BASIC WARM
 
 SIGNON1:       .BYTE     CS
                .BYTE     "ZTO-80 By Jacob Hahn",CR,LF
