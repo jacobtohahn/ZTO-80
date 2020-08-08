@@ -12,7 +12,22 @@ The ZTO-80 SBC is perfect for those wanting to get started developing with the Z
 ### SBC
 The ZTO-80 Single Board Computer, as the name implies, consists of only one PCB containing all essential system ICs along with I/O. This makes it cheaper and more compact than a multi-board system, with the downside being that it lacks the flexibility and customization it would have otherwise. My design addresses this downside by providing as many on-board features as possible, while allowing customization through configuration headers and an expansion bus.
 
+#### SBC Features:
+- CPU: Zilog Z80, running at 4-20MHz (depending on the model and your crystal choice)
+- Memory:
+  - RAM: 32K
+  - ROM: 32K (with optional BASIC interpreter)
+- I/O:
+  - SIO:
+    - Two serial channels with programmable baud rate, one with a full RS232 DB9 port
+  - PIO:
+    - Two 8-bit parallel ports, one with a darlington transistor array for high current output
+  - CTC:
+    - Four timers with external triggers
+
 <img src="/Images/SBC1.jpg" width=500 />
 
 ### Modular System
-The ZTO-80 Modular System is a multi-board system allowing ultimate customization and expansion. The system is built out of *modules* and a *backplane*. The modules contain individual pieces of a ZTO-80 computer system (such as the CPU, memory, serial I/O, etc). The backplane provides power and ties all of the modules together.
+The ZTO-80 Modular System is a multi-board system allowing ultimate customization and expansion. The system is built out of *modules* and a *backplane*. The modules contain individual pieces of a ZTO-80 computer system (such as the CPU, memory, serial I/O, etc). The backplane provides power and ties all of the modules together. A bus provides a standardized interface for modules to communicate with each other and connect to the backplane.
+
+
