@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.6)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -1320,7 +1320,7 @@
   )
 
   (gr_line (start 95.885 120.015) (end 95.885 62.865) (layer Dwgs.User) (width 0.15) (tstamp 5F239C02))
-  (gr_text "READ EXPLANATORY DOC FOR MORE INFO\nAND DESIGN CONSIDERATIONS" (at 145.415 65.405) (layer Cmts.User)
+  (gr_text "SEE THE README FOR MORE INFO\nAND DESIGN CONSIDERATIONS" (at 145.415 65.405) (layer Cmts.User)
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (gr_text "COMPONENT KEEPOUT\nFOR ENCLOSURE \nCOMPATIBILITY\n(.0985 IN. WIDE):" (at 94.615 90.805) (layer Dwgs.User)

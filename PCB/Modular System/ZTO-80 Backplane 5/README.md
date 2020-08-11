@@ -3,6 +3,9 @@ This is the main backplane for the ZTO-80 Modular System. It includes 5 module s
 
 The power input supports 5V only. Anything over 5.5 volts could damage or destroy some ICs.
 
+## Additional Files
+- **PDF**: A subdirectory containing PDF files of the schematic and PCB.
+
 ## Component Notes
 The ZTO-80 bus header slots should be female sockets.
 
