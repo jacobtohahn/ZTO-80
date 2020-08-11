@@ -213,7 +213,7 @@
 0213   0104 D3 09                      OUT       (SIO_C),A
 0214   0106 3E 05                      LD        A,05H           ; request reg. 5
 0215   0108 D3 09                      OUT       (SIO_C),A
-0216   010A 3E 68                      LD        A,068H          ; Transmit 8 bits, TX enable
+0216   010A 3E EA                      LD        A,0EAH          ; Transmit 8 bits, TX enable
 0217   010C D3 09                      OUT       (SIO_C),A       ; end of SIO init
 0218   010E ED 56                      IM        1
 0219   0110 FB                         EI
