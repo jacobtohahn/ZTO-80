@@ -213,7 +213,7 @@ INIT:
                OUT       (SIO_C),A
                LD        A,05H           ; request reg. 5
                OUT       (SIO_C),A
-               LD        A,068H          ; Transmit 8 bits, TX enable
+               LD        A,0EAH          ; Transmit 8 bits, TX enable
                OUT       (SIO_C),A       ; end of SIO init
                IM        1
                EI
