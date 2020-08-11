@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ZTO-80-CTC-rescue)(type Legacy)(uri "${KIPRJMOD}/ZTO-80 CTC-rescue.lib")(options "")(descr ""))
-)
