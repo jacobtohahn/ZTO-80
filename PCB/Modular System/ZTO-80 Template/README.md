@@ -28,3 +28,4 @@ There is a slot which the board edge fits into, so if there are any components w
 
 ## General Design Considerations
 - When designing boards, I use a 25 mil grid. I recommend using the same.
+- All of my boards use 10 mil trace/space. This is compatible with most fabs and also is small enough to fit traces between pins.
