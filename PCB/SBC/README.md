@@ -6,3 +6,4 @@ Please note that this board has never been manufactured and is simply a prototyp
 ## Additional files and subdirectories
 - **SBC_BOM.csv**: A CSV file containing the Bill of Materials for all the parts required to build the SBC.
 - **PDF**: A subdirectory containing PDF files of the schematic and PCB.
+- **Getting Started with the ZTO-80 SBC.pdf**: A getting started guide for the SBC.
