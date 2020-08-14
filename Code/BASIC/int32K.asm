@@ -236,7 +236,7 @@ CORW:
                RST       08H
 COLDSTART:     LD        A,'Y'           ; Set the BASIC STARTED flag
                LD        (basicStarted),A
-               JP        $01A0           ; Start BASIC COLD
+               JP        $0200          ; Start BASIC COLD
 CHECKWARM:
                CP        'W'
                JR        NZ, CORW
@@ -245,11 +245,11 @@ CHECKWARM:
                RST       08H
                LD        A,$0A
                RST       08H
-               JP        $01A3           ; Start BASIC WARM
+               JP        $0203           ; Start BASIC WARM
 
 SIGNON1:       .BYTE     CS
                .BYTE     "ZTO-80 By Jacob Hahn",CR,LF
-               .BYTE     "Z80 BASIC Startup",CR,LF,0
+               .BYTE     "ZTO-80 BASIC v0.0.3 Startup",CR,LF,0
 SIGNON2:       .BYTE     CR,LF
                .BYTE     "Cold or warm start (C or W)? ",0
 

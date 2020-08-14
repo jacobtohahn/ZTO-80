@@ -222,7 +222,7 @@
 0222   0117 3A 44 80                   LD        A,(basicStarted); Check the BASIC STARTED flag
 0223   011A FE 59                      CP        'Y'             ; to see if this is power-up
 0224   011C 20 16                      JR        NZ,COLDSTART    ; If not BASIC started then always do cold start
-0225   011E 21 75 01                   LD        HL,SIGNON2      ; Cold/warm message
+0225   011E 21 7F 01                   LD        HL,SIGNON2      ; Cold/warm message
 0226   0121 CD CC 00                   CALL      PRINT           ; Output string
 0227   0124             CORW:
 0228   0124 CD 8D 00                   CALL      RXA
@@ -236,7 +236,7 @@
 0236   0133 CF                         RST       08H
 0237   0134 3E 59       COLDSTART:     LD        A,'Y'           ; Set the BASIC STARTED flag
 0238   0136 32 44 80                   LD        (basicStarted),A
-0239   0139 C3 A0 01                   JP        $01A0           ; Start BASIC COLD
+0239   0139 C3 00 02                   JP        $0200          ; Start BASIC COLD
 0240   013C             CHECKWARM:
 0241   013C FE 57                      CP        'W'
 0242   013E 20 E4                      JR        NZ, CORW
@@ -245,7 +245,7 @@
 0245   0143 CF                         RST       08H
 0246   0144 3E 0A                      LD        A,$0A
 0247   0146 CF                         RST       08H
-0248   0147 C3 A3 01                   JP        $01A3           ; Start BASIC WARM
+0248   0147 C3 03 02                   JP        $0203           ; Start BASIC WARM
 0249   014A             
 0250   014A 0C          SIGNON1:       .BYTE     CS
 0251   014B 5A 54 4F 2D                .BYTE     "ZTO-80 By Jacob Hahn",CR,LF
@@ -254,20 +254,23 @@
 0251   0157 63 6F 62 20 
 0251   015B 48 61 68 6E 
 0251   015F 0D 0A 
-0252   0161 5A 38 30 20                .BYTE     "Z80 BASIC Startup",CR,LF,0
-0252   0165 42 41 53 49 
-0252   0169 43 20 53 74 
-0252   016D 61 72 74 75 
-0252   0171 70 0D 0A 00 
-0253   0175 0D 0A       SIGNON2:       .BYTE     CR,LF
-0254   0177 43 6F 6C 64                .BYTE     "Cold or warm start (C or W)? ",0
-0254   017B 20 6F 72 20 
-0254   017F 77 61 72 6D 
-0254   0183 20 73 74 61 
-0254   0187 72 74 20 28 
-0254   018B 43 20 6F 72 
-0254   018F 20 57 29 3F 
-0254   0193 20 00 
-0255   0195             
-0256   0195                            .END
+0252   0161 5A 54 4F 2D                .BYTE     "ZTO-80 BASIC v0.0.3 Startup",CR,LF,0
+0252   0165 38 30 20 42 
+0252   0169 41 53 49 43 
+0252   016D 20 76 30 2E 
+0252   0171 30 2E 33 20 
+0252   0175 53 74 61 72 
+0252   0179 74 75 70 0D 
+0252   017D 0A 00 
+0253   017F 0D 0A       SIGNON2:       .BYTE     CR,LF
+0254   0181 43 6F 6C 64                .BYTE     "Cold or warm start (C or W)? ",0
+0254   0185 20 6F 72 20 
+0254   0189 77 61 72 6D 
+0254   018D 20 73 74 61 
+0254   0191 72 74 20 28 
+0254   0195 43 20 6F 72 
+0254   0199 20 57 29 3F 
+0254   019D 20 00 
+0255   019F             
+0256   019F                            .END
 tasm: Number of errors = 0
