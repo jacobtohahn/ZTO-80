@@ -1,4 +1,4 @@
-Manufacturer Part Number,Manufacturer,Customer Reference,Reference Designator,Quantity
+﻿Manufacturer Part Number,Manufacturer,Customer Reference,Reference Designator,Quantity
 Z84C0008PEG,Zilog,Z80CPU,U1,1
 Z84C4008PEG,Zilog,Z80SIO,U2,1
 Z84C2008PEG,Zilog,Z80PIO,U5,1
@@ -22,7 +22,7 @@ A-DS 09 A/KG-T2S,Assmann WSW Components,RS232,J3,1
 RC0805FR-07220RL,Yageo,220,"R1, R2",2
 RC0805JR-071KL,Yageo,1k,R3-R8,6
 RC0805FR-072K2L,Yageo,2.2k,R9-R16,8
-RC0805FR-07100KL,Yageo,100k,R17-R20,4
+RC0805FR-07100KL,Yageo,100k,R17-R22,6
 1825910-6,TE Connectivity ALCOSWITCH Switches,Reset,SW1,1
 C0805C104M3RACTU,KEMET,0.1u,C1-C16,16
 C0805C106K8PACTU,KEMET,10u,C17,1
