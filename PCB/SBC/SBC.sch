@@ -814,10 +814,10 @@ Wire Wire Line
 	950  6925 750  6925
 Text Label 750  6925 0    50   ~ 0
 INT
-Text Label 675  7025 0    50   ~ 0
-DARTIEI
+Text Label 750  7025 0    50   ~ 0
+SIOIEI
 Wire Wire Line
-	675  7025 950  7025
+	750  7025 950  7025
 Text Label 2450 4925 2    50   ~ 0
 RXA
 Wire Wire Line
@@ -995,10 +995,10 @@ Text Label 2975 7025 0    50   ~ 0
 PIOIEI
 Wire Wire Line
 	2975 7025 3200 7025
-Text Label 2925 7125 0    50   ~ 0
-DARTIEI
+Text Label 2975 7125 0    50   ~ 0
+SIOIEI
 Wire Wire Line
-	2925 7125 3200 7125
+	2975 7125 3200 7125
 Wire Notes Line
 	4575 4175 4575 475 
 $Comp
