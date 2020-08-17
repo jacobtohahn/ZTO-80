@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 15)
+    (drawings 16)
     (tracks 301)
     (zones 0)
     (modules 12)
@@ -1693,6 +1693,9 @@
     )
   )
 
+  (gr_text "Licensed under CERN-OHL-S v2" (at 109.22 118.745) (layer B.SilkS) (tstamp 5F3A9AC5)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
   (gr_text v1.1 (at 172.085 115.57) (layer F.SilkS) (tstamp 5F331A52)
     (effects (font (size 1.524 1.524) (thickness 0.2032)) (justify left))
   )
