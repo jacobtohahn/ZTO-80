@@ -13,195 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	825  2575 975  2575
-Wire Wire Line
-	800  2675 975  2675
-Wire Wire Line
-	800  2775 975  2775
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even J1
-U 1 1 5E25F961
-P 1175 1775
-F 0 "J1" H 1225 2892 50  0000 C CNN
-F 1 "ZTO-80 Bus" H 1225 2801 50  0000 C CNN
-F 2 "ZTO-80_Header:PinHeader_2x20_P2.54mm_Horizontal" H 1175 1775 50  0001 C CNN
-F 3 "~" H 1175 1775 50  0001 C CNN
-	1    1175 1775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	975  875  825  875 
-Wire Wire Line
-	975  975  825  975 
-Wire Wire Line
-	975  1075 825  1075
-Wire Wire Line
-	975  1175 825  1175
-Wire Wire Line
-	975  1275 825  1275
-Wire Wire Line
-	975  1375 825  1375
-Wire Wire Line
-	975  1475 825  1475
-Wire Wire Line
-	975  1575 825  1575
-Wire Wire Line
-	975  1775 825  1775
-Wire Wire Line
-	975  1875 825  1875
-Wire Wire Line
-	975  1975 825  1975
-Wire Wire Line
-	975  2075 825  2075
-Wire Wire Line
-	975  2175 825  2175
-Wire Wire Line
-	975  2275 825  2275
-Text Label 1525 1575 0    50   ~ 0
-A0
-Text Label 825  1575 0    50   ~ 0
-A1
-Text Label 1525 1475 0    50   ~ 0
-A2
-Text Label 825  1475 0    50   ~ 0
-A3
-Text Label 1525 1375 0    50   ~ 0
-A4
-Text Label 825  1375 0    50   ~ 0
-A5
-Text Label 1525 1275 0    50   ~ 0
-A6
-Text Label 825  1275 0    50   ~ 0
-A7
-Text Label 1525 1175 0    50   ~ 0
-A8
-Text Label 825  1175 0    50   ~ 0
-A9
-Text Label 1525 1075 0    50   ~ 0
-A10
-Text Label 825  1075 0    50   ~ 0
-A11
-Text Label 1525 975  0    50   ~ 0
-A12
-Text Label 825  975  0    50   ~ 0
-A13
-Text Label 1525 875  0    50   ~ 0
-A14
-Text Label 825  875  0    50   ~ 0
-A15
-$Comp
-L power:VCC #PWR01
-U 1 1 5E287266
-P 700 1675
-F 0 "#PWR01" H 700 1525 50  0001 C CNN
-F 1 "VCC" H 700 1825 50  0000 C CNN
-F 2 "" H 700 1675 50  0001 C CNN
-F 3 "" H 700 1675 50  0001 C CNN
-	1    700  1675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  1675 975  1675
-$Comp
-L power:GND #PWR02
-U 1 1 5E288EF4
-P 1750 1675
-F 0 "#PWR02" H 1750 1425 50  0001 C CNN
-F 1 "GND" H 1750 1525 50  0000 C CNN
-F 2 "" H 1750 1675 50  0001 C CNN
-F 3 "" H 1750 1675 50  0001 C CNN
-	1    1750 1675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1475 875  1525 875 
-Wire Wire Line
-	1475 975  1525 975 
-Wire Wire Line
-	1475 1075 1525 1075
-Wire Wire Line
-	1475 1175 1525 1175
-Wire Wire Line
-	1475 1275 1525 1275
-Wire Wire Line
-	1475 1375 1525 1375
-Wire Wire Line
-	1475 1475 1525 1475
-Wire Wire Line
-	1475 1575 1525 1575
-Wire Wire Line
-	1475 1775 1525 1775
-Wire Wire Line
-	1475 1875 1525 1875
-Wire Wire Line
-	1475 1975 1525 1975
-Wire Wire Line
-	1475 2075 1525 2075
-Wire Wire Line
-	1475 2175 1525 2175
-Wire Wire Line
-	1475 2275 1525 2275
-Wire Wire Line
-	1475 2375 1525 2375
-Wire Wire Line
-	1475 2475 1525 2475
-Wire Wire Line
-	1475 2575 1525 2575
-Wire Wire Line
-	1475 2675 1525 2675
-Wire Wire Line
-	1475 2775 1525 2775
-Wire Wire Line
-	1475 1675 1750 1675
-Text Label 825  2075 0    50   ~ 0
-D1
-Text Label 1525 1975 0    50   ~ 0
-D2
-Text Label 825  1975 0    50   ~ 0
-D3
-Text Label 1525 1875 0    50   ~ 0
-D4
-Text Label 1525 1775 0    50   ~ 0
-D6
-Text Label 825  1775 0    50   ~ 0
-D7
-Text Label 1525 2075 0    50   ~ 0
-D0
-Text Label 825  1875 0    50   ~ 0
-D5
-Text Label 825  2175 0    50   ~ 0
-CLK
-Text Label 1525 2175 0    50   ~ 0
-M1
-Text Label 825  2275 0    50   ~ 0
-RST
-Text Label 1525 2275 0    50   ~ 0
-INT
-Text Label 800  2375 0    50   ~ 0
-MREQ
-Wire Wire Line
-	800  2375 975  2375
-Text Label 1525 2375 0    50   ~ 0
-WR
-Text Label 800  2475 0    50   ~ 0
-IORQ
-Wire Wire Line
-	800  2475 975  2475
-Text Label 1525 2475 0    50   ~ 0
-RD
-Text Label 825  2575 0    50   ~ 0
-TXB
-Text Label 1525 2575 0    50   ~ 0
-RXB
-Text Label 1525 2675 0    50   ~ 0
-USR2
-Text Label 800  2775 0    50   ~ 0
-USR3
-Text Label 1525 2775 0    50   ~ 0
-USR4
-Text Label 800  2675 0    50   ~ 0
-USR1
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5E2AD62D
@@ -335,7 +146,7 @@ Text Label 7650 2150 0    50   ~ 0
 IORQ
 Text Label 7725 2250 0    50   ~ 0
 RD
-Text Label 7725 2600 0    50   ~ 0
+Text Label 7725 2400 0    50   ~ 0
 INT
 Text Label 9075 1950 0    50   ~ 0
 CLK
@@ -485,7 +296,7 @@ F 3 "" H 5550 1550 50  0001 C CNN
 	1    5550 1550
 	1    0    0    -1  
 $EndComp
-Text Label 7600 2400 0    50   ~ 0
+Text Label 7600 2500 0    50   ~ 0
 CTCIEI
 Text Label 6150 2000 3    50   ~ 0
 CTCIEI
@@ -550,7 +361,7 @@ Text Label 4725 1725 0    50   ~ 0
 CTCCE
 Wire Wire Line
 	4675 1725 4725 1725
-Text Label 7725 2500 0    50   ~ 0
+Text Label 7725 2600 0    50   ~ 0
 IEO
 Wire Wire Line
 	2125 2150 2300 2150
@@ -615,20 +426,6 @@ F 3 "~" H 10725 2075 50  0001 C CNN
 	1    10725 2075
 	1    0    0    -1  
 $EndComp
-NoConn ~ 800  2775
-NoConn ~ 1525 2775
-NoConn ~ 1525 2575
-NoConn ~ 1525 2375
-NoConn ~ 825  2575
-NoConn ~ 800  2375
-NoConn ~ 825  875 
-NoConn ~ 825  975 
-NoConn ~ 825  1075
-NoConn ~ 825  1175
-NoConn ~ 1525 1175
-NoConn ~ 1525 1075
-NoConn ~ 1525 975 
-NoConn ~ 1525 875 
 Wire Notes Line
 	3350 3050 3350 475 
 Wire Notes Line
@@ -662,8 +459,6 @@ F 3 "~" H 10725 1675 50  0001 C CNN
 	1    10725 1675
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9050 900  9075 900 
 Wire Wire Line
 	9050 1000 9075 1000
 Wire Wire Line
@@ -866,11 +661,11 @@ Wire Wire Line
 Wire Wire Line
 	7725 2250 7850 2250
 Wire Wire Line
+	7725 2400 7850 2400
+Wire Wire Line
+	7600 2500 7850 2500
+Wire Wire Line
 	7725 2600 7850 2600
-Wire Wire Line
-	7600 2400 7850 2400
-Wire Wire Line
-	7725 2500 7850 2500
 Wire Wire Line
 	7600 1750 7850 1750
 Wire Wire Line
@@ -932,4 +727,222 @@ F 3 "" H 600 3575 50  0001 C CNN
 	1    600  3575
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:Jumper_2_Open JP6
+U 1 1 5F2B2FD8
+P 9400 900
+F 0 "JP6" H 9325 1025 50  0000 L CNN
+F 1 "Jumper_2_Open" V 9445 998 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9400 900 50  0001 C CNN
+F 3 "~" H 9400 900 50  0001 C CNN
+	1    9400 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 900  9200 900 
+Text Label 9600 900  0    50   ~ 0
+CLK
+Wire Wire Line
+	1625 1050 1475 1050
+Wire Wire Line
+	1650 950  1475 950 
+Wire Wire Line
+	1650 850  1475 850 
+Wire Wire Line
+	1475 2750 1625 2750
+Wire Wire Line
+	1475 2650 1625 2650
+Wire Wire Line
+	1475 2550 1625 2550
+Wire Wire Line
+	1475 2450 1625 2450
+Wire Wire Line
+	1475 2350 1625 2350
+Wire Wire Line
+	1475 2250 1625 2250
+Wire Wire Line
+	1475 2150 1625 2150
+Wire Wire Line
+	1475 2050 1625 2050
+Wire Wire Line
+	1475 1850 1625 1850
+Wire Wire Line
+	1475 1750 1625 1750
+Wire Wire Line
+	1475 1650 1625 1650
+Wire Wire Line
+	1475 1550 1625 1550
+Wire Wire Line
+	1475 1450 1625 1450
+Wire Wire Line
+	1475 1350 1625 1350
+Text Label 925  2050 2    50   ~ 0
+A0
+Text Label 1625 2050 2    50   ~ 0
+A1
+Text Label 925  2150 2    50   ~ 0
+A2
+Text Label 1625 2150 2    50   ~ 0
+A3
+Text Label 925  2250 2    50   ~ 0
+A4
+Text Label 1625 2250 2    50   ~ 0
+A5
+Text Label 925  2350 2    50   ~ 0
+A6
+Text Label 1625 2350 2    50   ~ 0
+A7
+Text Label 925  2450 2    50   ~ 0
+A8
+Text Label 1625 2450 2    50   ~ 0
+A9
+Text Label 925  2550 2    50   ~ 0
+A10
+Text Label 1625 2550 2    50   ~ 0
+A11
+Text Label 925  2650 2    50   ~ 0
+A12
+Text Label 1625 2650 2    50   ~ 0
+A13
+Text Label 925  2750 2    50   ~ 0
+A14
+Text Label 1625 2750 2    50   ~ 0
+A15
+$Comp
+L power:VCC #PWR0111
+U 1 1 5F3B7D2A
+P 1750 1950
+F 0 "#PWR0111" H 1750 1800 50  0001 C CNN
+F 1 "VCC" H 1750 2100 50  0000 C CNN
+F 2 "" H 1750 1950 50  0001 C CNN
+F 3 "" H 1750 1950 50  0001 C CNN
+	1    1750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1950 1475 1950
+$Comp
+L power:GND #PWR0112
+U 1 1 5F3B7D31
+P 700 1950
+F 0 "#PWR0112" H 700 1700 50  0001 C CNN
+F 1 "GND" H 700 1800 50  0000 C CNN
+F 2 "" H 700 1950 50  0001 C CNN
+F 3 "" H 700 1950 50  0001 C CNN
+	1    700  1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  2750 925  2750
+Wire Wire Line
+	975  2650 925  2650
+Wire Wire Line
+	975  2550 925  2550
+Wire Wire Line
+	975  2450 925  2450
+Wire Wire Line
+	975  2350 925  2350
+Wire Wire Line
+	975  2250 925  2250
+Wire Wire Line
+	975  2150 925  2150
+Wire Wire Line
+	975  2050 925  2050
+Wire Wire Line
+	975  1850 925  1850
+Wire Wire Line
+	975  1750 925  1750
+Wire Wire Line
+	975  1650 925  1650
+Wire Wire Line
+	975  1550 925  1550
+Wire Wire Line
+	975  1450 925  1450
+Wire Wire Line
+	975  1350 925  1350
+Wire Wire Line
+	975  1250 925  1250
+Wire Wire Line
+	975  1150 925  1150
+Wire Wire Line
+	975  1050 925  1050
+Wire Wire Line
+	975  950  925  950 
+Wire Wire Line
+	975  850  925  850 
+Wire Wire Line
+	975  1950 700  1950
+Text Label 1625 1550 2    50   ~ 0
+D1
+Text Label 925  1650 2    50   ~ 0
+D2
+Text Label 1625 1650 2    50   ~ 0
+D3
+Text Label 925  1750 2    50   ~ 0
+D4
+Text Label 925  1850 2    50   ~ 0
+D6
+Text Label 1625 1850 2    50   ~ 0
+D7
+Text Label 925  1550 2    50   ~ 0
+D0
+Text Label 1625 1750 2    50   ~ 0
+D5
+Text Label 1625 1450 2    50   ~ 0
+CLK
+Text Label 925  1450 2    50   ~ 0
+M1
+Text Label 1625 1350 2    50   ~ 0
+RST
+Text Label 925  1350 2    50   ~ 0
+INT
+Text Label 1650 1250 2    50   ~ 0
+MREQ
+Wire Wire Line
+	1650 1250 1475 1250
+Text Label 925  1250 2    50   ~ 0
+WR
+Text Label 1650 1150 2    50   ~ 0
+IORQ
+Wire Wire Line
+	1650 1150 1475 1150
+Text Label 925  1150 2    50   ~ 0
+RD
+Text Label 1625 1050 2    50   ~ 0
+TXB
+Text Label 925  1050 2    50   ~ 0
+RXB
+Text Label 925  950  2    50   ~ 0
+USR2
+Text Label 1650 850  2    50   ~ 0
+USR3
+Text Label 925  850  2    50   ~ 0
+USR4
+Text Label 1650 950  2    50   ~ 0
+USR1
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J1
+U 1 1 5F3B7D63
+P 1175 1750
+F 0 "J1" H 1225 2867 50  0000 C CNN
+F 1 "ZTO-80 Bus" H 1225 2776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal" H 1175 1750 50  0001 C CNN
+F 3 "~" H 1175 1750 50  0001 C CNN
+	1    1175 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 975  850 
+NoConn ~ 975  1050
+NoConn ~ 975  1250
+NoConn ~ 1475 850 
+NoConn ~ 1475 1050
+NoConn ~ 1475 1250
+NoConn ~ 975  2450
+NoConn ~ 975  2550
+NoConn ~ 975  2650
+NoConn ~ 975  2750
+NoConn ~ 1475 2750
+NoConn ~ 1475 2650
+NoConn ~ 1475 2550
+NoConn ~ 1475 2450
 $EndSCHEMATC
