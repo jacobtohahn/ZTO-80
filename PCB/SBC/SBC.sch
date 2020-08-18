@@ -1949,184 +1949,184 @@ F 3 "~" H 3800 9400 50  0001 C CNN
 	1    3800 9400
 	1    0    0    -1  
 $EndComp
-Text Label 4275 9200 2    50   ~ 0
+Text Label 3425 9700 0    50   ~ 0
 A0
-Text Label 3425 9200 0    50   ~ 0
+Text Label 4275 9700 2    50   ~ 0
 A1
-Text Label 4275 9100 2    50   ~ 0
+Text Label 3425 9800 0    50   ~ 0
 A2
-Text Label 3425 9100 0    50   ~ 0
+Text Label 4275 9800 2    50   ~ 0
 A3
-Text Label 4275 9000 2    50   ~ 0
+Text Label 3425 9900 0    50   ~ 0
 A4
-Text Label 3425 9000 0    50   ~ 0
+Text Label 4275 9900 2    50   ~ 0
 A5
-Text Label 4275 8900 2    50   ~ 0
+Text Label 3425 10000 0    50   ~ 0
 A6
-Text Label 3425 8900 0    50   ~ 0
+Text Label 4275 10000 2    50   ~ 0
 A7
-Text Label 4275 8800 2    50   ~ 0
+Text Label 3425 10100 0    50   ~ 0
 A8
-Text Label 3425 8800 0    50   ~ 0
+Text Label 4275 10100 2    50   ~ 0
 A9
-Text Label 4275 8700 2    50   ~ 0
+Text Label 3425 10200 0    50   ~ 0
 A10
-Text Label 3425 8700 0    50   ~ 0
+Text Label 4275 10200 2    50   ~ 0
 A11
-Text Label 4275 8600 2    50   ~ 0
+Text Label 3425 10300 0    50   ~ 0
 A12
-Text Label 3425 8600 0    50   ~ 0
+Text Label 4275 10300 2    50   ~ 0
 A13
-Text Label 4275 8500 2    50   ~ 0
+Text Label 3425 10400 0    50   ~ 0
 A14
-Text Label 3425 8500 0    50   ~ 0
+Text Label 4275 10400 2    50   ~ 0
 A15
 Wire Wire Line
-	3600 8500 3425 8500
-Wire Wire Line
-	3600 8600 3425 8600
-Wire Wire Line
-	3600 8700 3425 8700
-Wire Wire Line
-	3600 8800 3425 8800
-Wire Wire Line
-	3600 8900 3425 8900
-Wire Wire Line
-	3600 9000 3425 9000
-Wire Wire Line
-	3600 9100 3425 9100
-Wire Wire Line
-	3600 9200 3425 9200
-Wire Wire Line
-	3600 9400 3425 9400
-Wire Wire Line
-	3600 9500 3425 9500
-Wire Wire Line
-	3600 9600 3425 9600
-Wire Wire Line
-	3600 9700 3425 9700
-Wire Wire Line
-	3600 9800 3425 9800
-Wire Wire Line
-	3600 9900 3425 9900
-Wire Wire Line
-	3600 10100 3425 10100
-Wire Wire Line
-	3600 10200 3450 10200
-Wire Wire Line
-	3600 10300 3425 10300
-Wire Wire Line
-	3600 10400 3425 10400
-Wire Wire Line
-	4100 8500 4275 8500
-Wire Wire Line
-	4100 8600 4275 8600
-Wire Wire Line
-	4100 8700 4275 8700
-Wire Wire Line
-	4100 8800 4275 8800
-Wire Wire Line
-	4100 8900 4275 8900
-Wire Wire Line
-	4100 9000 4275 9000
-Wire Wire Line
-	4100 9100 4275 9100
-Wire Wire Line
-	4100 9200 4275 9200
-Wire Wire Line
-	4100 9400 4275 9400
-Wire Wire Line
-	4100 9500 4275 9500
-Wire Wire Line
-	4100 9600 4275 9600
-Wire Wire Line
-	4100 9700 4275 9700
-Wire Wire Line
-	4100 9800 4275 9800
-Wire Wire Line
-	4100 9900 4275 9900
-Wire Wire Line
-	4100 10000 4275 10000
-Wire Wire Line
-	4100 10100 4275 10100
-Wire Wire Line
-	4100 10200 4250 10200
+	4100 10400 4275 10400
 Wire Wire Line
 	4100 10300 4275 10300
 Wire Wire Line
-	4100 10400 4275 10400
+	4100 10200 4275 10200
+Wire Wire Line
+	4100 10100 4275 10100
+Wire Wire Line
+	4100 10000 4275 10000
+Wire Wire Line
+	4100 9900 4275 9900
+Wire Wire Line
+	4100 9800 4275 9800
+Wire Wire Line
+	4100 9700 4275 9700
+Wire Wire Line
+	4100 9500 4275 9500
+Wire Wire Line
+	4100 9400 4275 9400
+Wire Wire Line
+	4100 9300 4275 9300
+Wire Wire Line
+	4100 9200 4275 9200
+Wire Wire Line
+	4100 9100 4275 9100
+Wire Wire Line
+	4100 9000 4275 9000
+Wire Wire Line
+	4100 8800 4275 8800
+Wire Wire Line
+	4100 8700 4250 8700
+Wire Wire Line
+	4100 8600 4275 8600
+Wire Wire Line
+	4100 8500 4275 8500
+Wire Wire Line
+	3600 10400 3425 10400
+Wire Wire Line
+	3600 10300 3425 10300
+Wire Wire Line
+	3600 10200 3425 10200
+Wire Wire Line
+	3600 10100 3425 10100
+Wire Wire Line
+	3600 10000 3425 10000
+Wire Wire Line
+	3600 9900 3425 9900
+Wire Wire Line
+	3600 9800 3425 9800
+Wire Wire Line
+	3600 9700 3425 9700
+Wire Wire Line
+	3600 9500 3425 9500
+Wire Wire Line
+	3600 9400 3425 9400
+Wire Wire Line
+	3600 9300 3425 9300
+Wire Wire Line
+	3600 9200 3425 9200
+Wire Wire Line
+	3600 9100 3425 9100
+Wire Wire Line
+	3600 9000 3425 9000
+Wire Wire Line
+	3600 8900 3425 8900
+Wire Wire Line
+	3600 8800 3425 8800
+Wire Wire Line
+	3600 8700 3450 8700
+Wire Wire Line
+	3600 8600 3425 8600
+Wire Wire Line
+	3600 8500 3425 8500
 $Comp
 L power:VCC #PWR011
 U 1 1 614E2A59
-P 3325 9300
-F 0 "#PWR011" H 3325 9150 50  0001 C CNN
-F 1 "VCC" H 3325 9450 50  0000 C CNN
-F 2 "" H 3325 9300 50  0001 C CNN
-F 3 "" H 3325 9300 50  0001 C CNN
-	1    3325 9300
+P 4375 9600
+F 0 "#PWR011" H 4375 9450 50  0001 C CNN
+F 1 "VCC" H 4375 9750 50  0000 C CNN
+F 2 "" H 4375 9600 50  0001 C CNN
+F 3 "" H 4375 9600 50  0001 C CNN
+	1    4375 9600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3325 9300 3600 9300
-Text Label 4275 9700 2    50   ~ 0
+	4375 9600 4100 9600
+Text Label 3425 9200 0    50   ~ 0
 D0
-Text Label 3425 9700 0    50   ~ 0
+Text Label 4275 9200 2    50   ~ 0
 D1
-Text Label 4275 9600 2    50   ~ 0
+Text Label 3425 9300 0    50   ~ 0
 D2
-Text Label 3425 9600 0    50   ~ 0
+Text Label 4275 9300 2    50   ~ 0
 D3
-Text Label 4275 9500 2    50   ~ 0
-D4
-Text Label 3425 9500 0    50   ~ 0
-D5
-Text Label 4275 9400 2    50   ~ 0
-D6
 Text Label 3425 9400 0    50   ~ 0
+D4
+Text Label 4275 9400 2    50   ~ 0
+D5
+Text Label 3425 9500 0    50   ~ 0
+D6
+Text Label 4275 9500 2    50   ~ 0
 D7
-Text Label 3425 9800 0    50   ~ 0
+Text Label 4275 9100 2    50   ~ 0
 CLK
-Text Label 4275 9800 2    50   ~ 0
+Text Label 3425 9100 0    50   ~ 0
 M1
-Text Label 3425 9900 0    50   ~ 0
+Text Label 4275 9000 2    50   ~ 0
 RST
-Text Label 4275 9900 2    50   ~ 0
+Text Label 3425 9000 0    50   ~ 0
 INT
 Wire Wire Line
-	3600 10000 3425 10000
-Text Label 3425 10000 0    50   ~ 0
+	4100 8900 4275 8900
+Text Label 4275 8900 2    50   ~ 0
 MREQ
-Text Label 4275 10000 2    50   ~ 0
+Text Label 3425 8900 0    50   ~ 0
 WR
-Text Label 3425 10100 0    50   ~ 0
+Text Label 4275 8800 2    50   ~ 0
 IORQ
-Text Label 4275 10100 2    50   ~ 0
+Text Label 3425 8800 0    50   ~ 0
 RD
-Text Label 3050 10200 2    50   ~ 0
+Text Label 4650 8700 0    50   ~ 0
 TXB
-Text Label 4650 10200 0    50   ~ 0
+Text Label 3050 8700 2    50   ~ 0
 RXB
-Text Label 3425 10300 0    50   ~ 0
+Text Label 4275 8600 2    50   ~ 0
 USR1
-Text Label 4275 10300 2    50   ~ 0
+Text Label 3425 8600 0    50   ~ 0
 USR2
-Text Label 3425 10400 0    50   ~ 0
+Text Label 4275 8500 2    50   ~ 0
 USR3
-Text Label 4275 10400 2    50   ~ 0
+Text Label 3425 8500 0    50   ~ 0
 USR4
 $Comp
 L power:GND #PWR016
 U 1 1 61D237CD
-P 4375 9300
-F 0 "#PWR016" H 4375 9050 50  0001 C CNN
-F 1 "GND" H 4375 9150 50  0000 C CNN
-F 2 "" H 4375 9300 50  0001 C CNN
-F 3 "" H 4375 9300 50  0001 C CNN
-	1    4375 9300
+P 3325 9600
+F 0 "#PWR016" H 3325 9350 50  0001 C CNN
+F 1 "GND" H 3325 9450 50  0000 C CNN
+F 2 "" H 3325 9600 50  0001 C CNN
+F 3 "" H 3325 9600 50  0001 C CNN
+	1    3325 9600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 9300 4375 9300
+	3600 9600 3325 9600
 Wire Notes Line
 	4975 4175 4975 11025
 Text Notes 2750 11000 0    50   ~ 0
@@ -2181,7 +2181,7 @@ F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 6550 8650 50  
 	1    6650 8650
 	1    0    0    -1  
 $EndComp
-Text Label 5900 8650 0    50   ~ 0
+Text Label 6000 8250 0    50   ~ 0
 CLK
 Wire Wire Line
 	5275 8650 5300 8650
@@ -2425,31 +2425,31 @@ Text Label 6300 9800 0    50   ~ 0
 HLT
 Wire Wire Line
 	6300 9800 6350 9800
-NoConn ~ 4275 10300
-NoConn ~ 4275 10400
-NoConn ~ 3425 10400
-NoConn ~ 3425 10300
+NoConn ~ 3600 8600
+NoConn ~ 3600 8500
+NoConn ~ 4100 8500
+NoConn ~ 4100 8600
 $Comp
 L Jumper:Jumper_2_Open JP1
 U 1 1 625CC04C
-P 3250 10200
-F 0 "JP1" H 3250 10343 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3250 10344 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3250 10200 50  0001 C CNN
-F 3 "~" H 3250 10200 50  0001 C CNN
-	1    3250 10200
-	1    0    0    -1  
+P 4450 8700
+F 0 "JP1" H 4450 8843 50  0000 C CNN
+F 1 "Jumper_2_Open" H 4450 8844 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 8700 50  0001 C CNN
+F 3 "~" H 4450 8700 50  0001 C CNN
+	1    4450 8700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Jumper:Jumper_2_Open JP2
 U 1 1 625F703E
-P 4450 10200
-F 0 "JP2" H 4450 10343 50  0000 C CNN
-F 1 "Jumper_2_Open" H 4450 10344 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 10200 50  0001 C CNN
-F 3 "~" H 4450 10200 50  0001 C CNN
-	1    4450 10200
-	1    0    0    -1  
+P 3250 8700
+F 0 "JP2" H 3250 8843 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3250 8844 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3250 8700 50  0001 C CNN
+F 3 "~" H 3250 8700 50  0001 C CNN
+	1    3250 8700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R5
@@ -3121,19 +3121,19 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J12
 U 1 1 631A7534
-P 4775 8500
-F 0 "J12" H 4725 8600 50  0000 L CNN
-F 1 "Conn_01x02" H 4855 8401 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4775 8500 50  0001 C CNN
-F 3 "~" H 4775 8500 50  0001 C CNN
-	1    4775 8500
+P 4725 10300
+F 0 "J12" H 4675 10400 50  0000 L CNN
+F 1 "Conn_01x02" H 4805 10201 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4725 10300 50  0001 C CNN
+F 3 "~" H 4725 10300 50  0001 C CNN
+	1    4725 10300
 	1    0    0    -1  
 $EndComp
-Text Label 4400 8500 0    50   ~ 0
+Text Label 4350 10300 0    50   ~ 0
 EXIEI
 Wire Wire Line
-	4575 8500 4400 8500
-NoConn ~ 4575 8600
+	4525 10300 4350 10300
+NoConn ~ 4525 10400
 $Comp
 L Device:R R21
 U 1 1 5F40F2E0
@@ -3164,4 +3164,17 @@ Wire Wire Line
 	2250 6425 2275 6425
 Wire Wire Line
 	2575 6425 2600 6425
+$Comp
+L Jumper:Jumper_2_Open JP6
+U 1 1 5F413BB6
+P 6000 8450
+F 0 "JP6" H 6000 8575 50  0000 C CNN
+F 1 "Jumper_2_Open" H 6000 8594 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6000 8450 50  0001 C CNN
+F 3 "~" H 6000 8450 50  0001 C CNN
+	1    6000 8450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 8650 6000 8650
 $EndSCHEMATC
