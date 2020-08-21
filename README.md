@@ -34,11 +34,15 @@ The ZTO-80 Modular System is a multi-board system allowing ultimate customizatio
 Copyright Jacob Hahn 2020.
 
 This source describes Open Hardware and is licensed under the CERN-OHLS v2.
-You may redistribute and modify this documentation and make products
+You may redistribute and modify this hardware and make products
 using it under the terms of the CERN-OHL-S v2 (https:/cern.ch/cern-ohl).
-This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED
+This hardware is distributed WITHOUT ANY EXPRESS OR IMPLIED
 WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY
 AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2
 for applicable conditions.
 
 Source location: https://github.com/jacobtohahn/ZTO-80
+
+This documentation is released under the Attribution-ShareAlike 4.0 International License and is copyright Jacob Hahn 2020. You may use and share this documentation under the terms of the license, found here: https://creativecommons.org/licenses/by-sa/4.0/.
+
+Please note that the CC-BY-SA License only applies to this project's documentation. Any other files, such as design files, are licensed under the terms of the CERN-OHL-S v2 license, as described above.
