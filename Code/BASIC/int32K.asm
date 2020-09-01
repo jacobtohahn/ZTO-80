@@ -31,8 +31,8 @@ SER_BUFSIZE     .EQU     3FH
 SER_FULLSIZE    .EQU     30H
 SER_EMPTYSIZE   .EQU     5
 
-SIO_D           .EQU     $01             ; Address of SIO command register
-SIO_C           .EQU     $09             ; Address of SIO data register
+SIO_D           .EQU     $00             ; Address of SIO command register
+SIO_C           .EQU     $02             ; Address of SIO data register
 
 serBuf          .EQU     $8000
 serInPtr        .EQU     serBuf+SER_BUFSIZE
@@ -249,7 +249,8 @@ CHECKWARM:
 
 SIGNON1:       .BYTE     CS
                .BYTE     "ZTO-80 By Jacob Hahn",CR,LF
-               .BYTE     "ZTO-80 BASIC v0.0.3 Startup",CR,LF,0
+               .BYTE     "Original Code Copyright Grant Searle",CR,LF
+               .BYTE     "ZTO-80 BASIC v1.0.0 Startup",CR,LF,0
 SIGNON2:       .BYTE     CR,LF
                .BYTE     "Cold or warm start (C or W)? ",0
 

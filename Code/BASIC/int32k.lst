@@ -31,8 +31,8 @@
 0031   0000             SER_FULLSIZE    .EQU     30H
 0032   0000             SER_EMPTYSIZE   .EQU     5
 0033   0000             
-0034   0000             SIO_D           .EQU     $01             ; Address of SIO command register
-0035   0000             SIO_C           .EQU     $09             ; Address of SIO data register
+0034   0000             SIO_D           .EQU     $00             ; Address of SIO command register
+0035   0000             SIO_C           .EQU     $02             ; Address of SIO data register
 0036   0000             
 0037   0000             serBuf          .EQU     $8000
 0038   0000             serInPtr        .EQU     serBuf+SER_BUFSIZE
@@ -81,12 +81,12 @@
 0081   003B E5                          PUSH     HL
 0082   003C             
 0083   003C 3E 00                       LD       A,$00
-0084   003E D3 09                       OUT      (SIO_C),A
-0085   0040 DB 09                       IN       A,(SIO_C)
+0084   003E D3 02                       OUT      (SIO_C),A
+0085   0040 DB 02                       IN       A,(SIO_C)
 0086   0042 E6 01                       AND      $01             ; Check if interrupt due to read buffer full
 0087   0044 28 2C                       JR       Z,rts0          ; if not, ignore
 0088   0046             
-0089   0046 DB 01                       IN       A,(SIO_D)
+0089   0046 DB 00                       IN       A,(SIO_D)
 0090   0048 F5                          PUSH     AF
 0091   0049 3A 43 80                    LD       A,(serBufUsed)
 0092   004C FE 3F                       CP       SER_BUFSIZE     ; If full then ignore
@@ -120,9 +120,9 @@
 0120   0077             A_RTS_OFF:
 0121   0077 F5                          PUSH    af             ; store A
 0122   0078 3E 05                       LD      a,00000101b      ; write into WR0: select WR5
-0123   007A D3 09                       OUT     (SIO_C),a
+0123   007A D3 02                       OUT     (SIO_C),a
 0124   007C 3E E8                       LD      a,11101000b      ; 8 bits/TX char; TX enable; RTS disable
-0125   007E D3 09                       OUT     (SIO_C),a
+0125   007E D3 02                       OUT     (SIO_C),a
 0126   0080 F1                          POP     af              ; retrieve A
 0127   0081 C9                          RET                 ; exit
 0128   0082             
@@ -131,9 +131,9 @@
 0131   0082             A_RTS_ON:
 0132   0082 F5                          PUSH    af             ; store A
 0133   0083 3E 05                       LD      a,00000101b      ; write into WR0: select WR5
-0134   0085 D3 09                       OUT     (SIO_C),a
+0134   0085 D3 02                       OUT     (SIO_C),a
 0135   0087 3E EA                       LD      a,11101010b      ; 8 bits/TX char; TX enable; RTS enable
-0136   0089 D3 09                       OUT     (SIO_C),a
+0136   0089 D3 02                       OUT     (SIO_C),a
 0137   008B F1                          POP     af              ; retrieve A
 0138   008C C9                          RET                 ; return
 0139   008D             ;------------------------------------------------------------------------------
@@ -165,12 +165,12 @@
 0165   00B7             ;------------------------------------------------------------------------------
 0166   00B7 F5          TXA:            PUSH     AF              ; Store character
 0167   00B8 3E 00       conout1:        LD       A,00H
-0168   00BA D3 09                       OUT      (SIO_C),A
-0169   00BC DB 09                       IN       A,(SIO_C)       ; Status byte
+0168   00BA D3 02                       OUT      (SIO_C),A
+0169   00BC DB 02                       IN       A,(SIO_C)       ; Status byte
 0170   00BE CB 57                       BIT      2,A             ; Set Zero flag if still transmitting character
 0171   00C0 28 F6                       JR       Z,conout1       ; Loop until flag signals ready
 0172   00C2 F1                          POP      AF              ; Retrieve character
-0173   00C3 D3 01                       OUT      (SIO_D),A       ; Output the character
+0173   00C3 D3 00                       OUT      (SIO_D),A       ; Output the character
 0174   00C5 C9                          RET
 0175   00C6             
 0176   00C6             ;------------------------------------------------------------------------------
@@ -195,26 +195,26 @@
 0195   00E1 AF                         XOR       A               ; 0 to accumulator
 0196   00E2 32 43 80                   LD        (serBufUsed),A
 0197   00E5 3E 00                      LD        A,00H           ; initialize SIO
-0198   00E7 D3 09                      OUT       (SIO_C),A       ; request reg. 0
+0198   00E7 D3 02                      OUT       (SIO_C),A       ; request reg. 0
 0199   00E9 3E 18                      LD        A,18H           ; Channel reset
-0200   00EB D3 09                      OUT       (SIO_C),A
+0200   00EB D3 02                      OUT       (SIO_C),A
 0201   00ED 00                         NOP
 0202   00EE 3E 04                      LD        A,04H           ; request reg. 4
-0203   00F0 D3 09                      OUT       (SIO_C),A
+0203   00F0 D3 02                      OUT       (SIO_C),A
 0204   00F2 3E 84                      LD        A,084H          ; x32 clock, 1 stop bit, no parity
-0205   00F4 D3 09                      OUT       (SIO_C),A
+0205   00F4 D3 02                      OUT       (SIO_C),A
 0206   00F6 3E 03                      LD        A,03H           ; request reg. 3
-0207   00F8 D3 09                      OUT       (SIO_C),A
+0207   00F8 D3 02                      OUT       (SIO_C),A
 0208   00FA 3E C1                      LD        A,0C1H          ; 8 bit receiver, RX enable
-0209   00FC D3 09                      OUT       (SIO_C),A
+0209   00FC D3 02                      OUT       (SIO_C),A
 0210   00FE 3E 01                      LD        A,01H           ; request reg. 1
-0211   0100 D3 09                      OUT       (SIO_C),A
+0211   0100 D3 02                      OUT       (SIO_C),A
 0212   0102 3E 18                      LD        A,018H          ; RX INT on all chars
-0213   0104 D3 09                      OUT       (SIO_C),A
+0213   0104 D3 02                      OUT       (SIO_C),A
 0214   0106 3E 05                      LD        A,05H           ; request reg. 5
-0215   0108 D3 09                      OUT       (SIO_C),A
+0215   0108 D3 02                      OUT       (SIO_C),A
 0216   010A 3E EA                      LD        A,0EAH          ; Transmit 8 bits, TX enable
-0217   010C D3 09                      OUT       (SIO_C),A       ; end of SIO init
+0217   010C D3 02                      OUT       (SIO_C),A       ; end of SIO init
 0218   010E ED 56                      IM        1
 0219   0110 FB                         EI
 0220   0111 21 4A 01                   LD        HL,SIGNON1      ; Sign-on message
@@ -222,7 +222,7 @@
 0222   0117 3A 44 80                   LD        A,(basicStarted); Check the BASIC STARTED flag
 0223   011A FE 59                      CP        'Y'             ; to see if this is power-up
 0224   011C 20 16                      JR        NZ,COLDSTART    ; If not BASIC started then always do cold start
-0225   011E 21 7F 01                   LD        HL,SIGNON2      ; Cold/warm message
+0225   011E 21 A5 01                   LD        HL,SIGNON2      ; Cold/warm message
 0226   0121 CD CC 00                   CALL      PRINT           ; Output string
 0227   0124             CORW:
 0228   0124 CD 8D 00                   CALL      RXA
@@ -254,23 +254,33 @@
 0251   0157 63 6F 62 20 
 0251   015B 48 61 68 6E 
 0251   015F 0D 0A 
-0252   0161 5A 54 4F 2D                .BYTE     "ZTO-80 BASIC v0.0.3 Startup",CR,LF,0
-0252   0165 38 30 20 42 
-0252   0169 41 53 49 43 
-0252   016D 20 76 30 2E 
-0252   0171 30 2E 33 20 
-0252   0175 53 74 61 72 
-0252   0179 74 75 70 0D 
-0252   017D 0A 00 
-0253   017F 0D 0A       SIGNON2:       .BYTE     CR,LF
-0254   0181 43 6F 6C 64                .BYTE     "Cold or warm start (C or W)? ",0
-0254   0185 20 6F 72 20 
-0254   0189 77 61 72 6D 
-0254   018D 20 73 74 61 
-0254   0191 72 74 20 28 
-0254   0195 43 20 6F 72 
-0254   0199 20 57 29 3F 
-0254   019D 20 00 
-0255   019F             
-0256   019F                            .END
+0252   0161 4F 72 69 67                .BYTE     "Original Code Copyright Grant Searle",CR,LF
+0252   0165 69 6E 61 6C 
+0252   0169 20 43 6F 64 
+0252   016D 65 20 43 6F 
+0252   0171 70 79 72 69 
+0252   0175 67 68 74 20 
+0252   0179 47 72 61 6E 
+0252   017D 74 20 53 65 
+0252   0181 61 72 6C 65 
+0252   0185 0D 0A 
+0253   0187 5A 54 4F 2D                .BYTE     "ZTO-80 BASIC v1.0.0 Startup",CR,LF,0
+0253   018B 38 30 20 42 
+0253   018F 41 53 49 43 
+0253   0193 20 76 31 2E 
+0253   0197 30 2E 30 20 
+0253   019B 53 74 61 72 
+0253   019F 74 75 70 0D 
+0253   01A3 0A 00 
+0254   01A5 0D 0A       SIGNON2:       .BYTE     CR,LF
+0255   01A7 43 6F 6C 64                .BYTE     "Cold or warm start (C or W)? ",0
+0255   01AB 20 6F 72 20 
+0255   01AF 77 61 72 6D 
+0255   01B3 20 73 74 61 
+0255   01B7 72 74 20 28 
+0255   01BB 43 20 6F 72 
+0255   01BF 20 57 29 3F 
+0255   01C3 20 00 
+0256   01C5             
+0257   01C5                            .END
 tasm: Number of errors = 0
