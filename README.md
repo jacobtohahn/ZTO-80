@@ -30,6 +30,18 @@ The ZTO-80 Single Board Computer, as the name implies, consists of only one PCB 
 ### Modular System
 The ZTO-80 Modular System is a multi-board system allowing ultimate customization and expansion. The system is built out of *modules* and a *backplane*. The modules contain individual pieces of a ZTO-80 computer system (such as the CPU, memory, serial I/O, etc). The backplane provides power and ties all of the modules together. A bus provides a standardized interface for modules to communicate with each other and connect to the backplane.
 
+The main advantage of a modular system is flexiblilty. A user can install or remove individual features, or can create new features in the form of modules. This allows rapid prototyping and troubleshooting. Also, due to increased board space, more customization options can be implemented into individual modules.
+
+Currently, work on the modular system is paused while I finish designing and testing the latest version of the SBC.
+
+#### Official ZTO-80 Modular System modules:
+- ZTO-80 Backplane 5
+- ZTO-80 CPU
+- ZTO-80 Memory
+- ZTO-80 SIO
+- ZTO-80 PIO (to be designed)
+- ZTO-80 CTC
+
 ## How I use this repository
 This repository keeps all of the PCB files and code for the ZTO-80. To keep things simple for me, I will update this repository each time I make a major change to an aspect of the design, either to the PCB or the code. I will also release minor fixes to the design.
 
