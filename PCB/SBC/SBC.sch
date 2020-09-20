@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "ZTO-80 SBC"
 Date "2020-08-05"
-Rev "3.0"
+Rev "3.1"
 Comp "Jacob Hahn"
 Comment1 ""
 Comment2 ""
