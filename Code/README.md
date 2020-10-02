@@ -3,5 +3,5 @@ The subdirectories in this folder contain assembly code, hex files, and supporti
 
 If you just want to get started with the ZTO-80 SBC, check out the releases tab for the latest compiled ROM.
 
-All software is copyright Grant Searle and has been modified by me to work with the Z80 SIO/0.
+The modified NASCOM BASIC is copyright Grant Searle and has been modified further by me to work with the Z80 SIO/0.
 See his work at http://searle.wales/.
