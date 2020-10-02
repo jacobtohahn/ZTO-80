@@ -360,17 +360,6 @@ Wire Wire Line
 	4950 4200 5000 4200
 Wire Wire Line
 	4950 4300 5000 4300
-$Comp
-L Device:R R2
-U 1 1 5F4987BC
-P 2725 3850
-F 0 "R2" V 2825 3850 50  0000 C CNN
-F 1 "100k" V 2725 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2655 3850 50  0001 C CNN
-F 3 "~" H 2725 3850 50  0001 C CNN
-	1    2725 3850
-	0    1    1    0   
-$EndComp
 NoConn ~ 2550 3950
 Wire Wire Line
 	2550 3850 2575 3850
@@ -387,17 +376,6 @@ F 3 "" H 2900 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2875 3850 2900 3850
-$Comp
-L Device:R R3
-U 1 1 5F4A370C
-P 2725 4950
-F 0 "R3" V 2825 4950 50  0000 C CNN
-F 1 "100k" V 2725 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2655 4950 50  0001 C CNN
-F 3 "~" H 2725 4950 50  0001 C CNN
-	1    2725 4950
-	0    1    1    0   
-$EndComp
 NoConn ~ 2550 5050
 Wire Wire Line
 	2550 4950 2575 4950
@@ -910,17 +888,6 @@ Wire Wire Line
 Wire Notes Line
 	6225 475  6225 6100
 $Comp
-L Oscillator:CXO_DIP8 X1
-U 1 1 5F59DF09
-P 4050 1725
-F 0 "X1" H 3850 1975 50  0000 L CNN
-F 1 "1.8432MHz" H 4050 1475 50  0000 L CNN
-F 2 "Oscillator:Oscillator_DIP-8" H 4500 1375 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 3950 1725 50  0001 C CNN
-	1    4050 1725
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0117
 U 1 1 5F5A1011
 P 3725 1725
@@ -944,8 +911,6 @@ F 3 "" H 4050 1425 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3725 1725 3750 1725
-Text Label 4350 1725 0    50   ~ 0
-BCLK
 $Comp
 L power:GND #PWR0119
 U 1 1 5F5AA2D1
@@ -1287,4 +1252,39 @@ NoConn ~ 1450 2725
 NoConn ~ 1450 2625
 NoConn ~ 1450 2525
 NoConn ~ 1450 2425
+$Comp
+L Oscillator:CXO_DIP8 X1
+U 1 1 5F59DF09
+P 4050 1725
+F 0 "X1" H 3850 1975 50  0000 L CNN
+F 1 "1.8432MHz" H 4050 1475 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-8" H 4500 1375 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 3950 1725 50  0001 C CNN
+	1    4050 1725
+	1    0    0    -1  
+$EndComp
+Text Label 4350 1725 0    50   ~ 0
+BCLK
+$Comp
+L Device:R R2
+U 1 1 5F4987BC
+P 2725 3850
+F 0 "R2" V 2825 3850 50  0000 C CNN
+F 1 "10k" V 2725 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2655 3850 50  0001 C CNN
+F 3 "~" H 2725 3850 50  0001 C CNN
+	1    2725 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F4A370C
+P 2725 4950
+F 0 "R3" V 2825 4950 50  0000 C CNN
+F 1 "10k" V 2725 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2655 4950 50  0001 C CNN
+F 3 "~" H 2725 4950 50  0001 C CNN
+	1    2725 4950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
