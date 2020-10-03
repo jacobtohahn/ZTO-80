@@ -509,9 +509,9 @@ F 3 "~" H 10825 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 10525 2525 0    50   ~ 0
-ZT1
+ZT0
 Text Label 11125 2525 2    50   ~ 0
-ZT2
+ZT1
 Wire Wire Line
 	11075 2525 11125 2525
 Wire Wire Line
