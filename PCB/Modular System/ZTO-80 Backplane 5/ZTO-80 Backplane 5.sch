@@ -118,12 +118,12 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5E36D3A1
-P 1675 3375
-F 0 "J2" H 1755 3367 50  0000 L CNN
-F 1 "Conn_01x02" H 1755 3276 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 1675 3375 50  0001 C CNN
-F 3 "~" H 1675 3375 50  0001 C CNN
-	1    1675 3375
+P 3475 3375
+F 0 "J2" H 3555 3367 50  0000 L CNN
+F 1 "Conn_01x02" H 3555 3276 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 3475 3375 50  0001 C CNN
+F 3 "~" H 3475 3375 50  0001 C CNN
+	1    3475 3375
 	0    -1   -1   0   
 $EndComp
 Text Label 2175 925  2    50   ~ 0
@@ -318,12 +318,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5F1160A2
-P 2125 3375
-F 0 "J4" H 2205 3367 50  0000 L CNN
-F 1 "Conn_01x02" H 2205 3276 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 2125 3375 50  0001 C CNN
-F 3 "~" H 2125 3375 50  0001 C CNN
-	1    2125 3375
+P 3025 3375
+F 0 "J4" H 3105 3367 50  0000 L CNN
+F 1 "Conn_01x02" H 3105 3276 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 3025 3375 50  0001 C CNN
+F 3 "~" H 3025 3375 50  0001 C CNN
+	1    3025 3375
 	0    -1   -1   0   
 $EndComp
 Text Label 4200 925  2    50   ~ 0
@@ -529,23 +529,23 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 5F1335F2
-P 3025 3375
-F 0 "J8" H 3105 3367 50  0000 L CNN
-F 1 "Conn_01x02" H 3105 3276 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 3025 3375 50  0001 C CNN
-F 3 "~" H 3025 3375 50  0001 C CNN
-	1    3025 3375
+P 2125 3375
+F 0 "J8" H 2205 3367 50  0000 L CNN
+F 1 "Conn_01x02" H 2205 3276 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 2125 3375 50  0001 C CNN
+F 3 "~" H 2125 3375 50  0001 C CNN
+	1    2125 3375
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5F14F000
-P 3475 3375
-F 0 "J10" H 3555 3367 50  0000 L CNN
-F 1 "Conn_01x02" H 3555 3276 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 3475 3375 50  0001 C CNN
-F 3 "~" H 3475 3375 50  0001 C CNN
-	1    3475 3375
+P 1675 3375
+F 0 "J10" H 1755 3367 50  0000 L CNN
+F 1 "Conn_01x02" H 1755 3276 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 1675 3375 50  0001 C CNN
+F 3 "~" H 1675 3375 50  0001 C CNN
+	1    1675 3375
 	0    -1   -1   0   
 $EndComp
 $Comp
