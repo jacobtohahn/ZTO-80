@@ -25,7 +25,7 @@ The ZTO-80 Single Board Computer, as the name implies, consists of only one PCB 
   - CTC:
     - Four timers with external triggers
 
-<img src="/Images/SBCv2.jpg" width=500 />
+<img src="/Images/SBC31Real.jpg" width=500 />
 
 ### Modular System
 The ZTO-80 Modular System is a multi-board system allowing ultimate customization and expansion. The system is built out of *modules* and a *backplane*. The modules contain individual pieces of a ZTO-80 computer system (such as the CPU, memory, serial I/O, etc). The backplane provides power and ties all of the modules together. A bus provides a standardized interface for modules to communicate with each other and connect to the backplane.
