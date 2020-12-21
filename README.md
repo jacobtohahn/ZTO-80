@@ -19,7 +19,7 @@ The ZTO-80 Single Board Computer, as the name implies, consists of only one PCB 
   - ROM: 32K (with optional BASIC interpreter)
 - I/O:
   - SIO:
-    - Two serial channels with programmable baud rate, one with a full RS232 DB9 port
+    - Two serial channels with programmable baud rates
   - PIO:
     - Two 8-bit parallel ports, one with a darlington transistor array for high current output
   - CTC:
