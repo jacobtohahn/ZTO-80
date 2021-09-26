@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title "ZTO-80 SBC")
-    (date 2021-05-20)
+    (date 2021-09-26)
     (rev 3.2)
     (company "Jacob Hahn")
   )
@@ -93,7 +93,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../../../../PCB/ZTO-80/Gerber/V3/"))
+      (outputdirectory "../../../../PCB/ZTO-80/Gerber/V3.2/"))
   )
 
   (net 0 "")
@@ -4670,7 +4670,7 @@
   (gr_text GitHub.com/jacobtohahn/ZTO-80 (at 146.05 66.675) (layer F.SilkS) (tstamp 5F48A0A2)
     (effects (font (size 1.524 1.524) (thickness 0.254)))
   )
-  (gr_text "JACOB HAHN 2020" (at 146.05 93.98) (layer F.SilkS) (tstamp 5F2BD05E)
+  (gr_text "JACOB HAHN 2021" (at 146.05 93.98) (layer F.SilkS) (tstamp 5F2BD05E)
     (effects (font (size 2.286 2.286) (thickness 0.381)))
   )
   (gr_text "ZTO-80 SBC v3.2" (at 146.05 89.535) (layer F.SilkS)

@@ -5,7 +5,7 @@ $Descr B 11000 17000 portrait
 encoding utf-8
 Sheet 1 1
 Title "ZTO-80 SBC"
-Date "2021-05-20"
+Date "2021-09-26"
 Rev "3.2"
 Comp "Jacob Hahn"
 Comment1 ""
